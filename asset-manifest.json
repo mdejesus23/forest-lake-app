@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bec8cf8f.css",
+    "main.js": "/static/js/main.4c79dd15.js",
+    "static/js/787.f4614bcb.chunk.js": "/static/js/787.f4614bcb.chunk.js",
+    "static/media/forest-lake1.jpg": "/static/media/forest-lake1.66a929c3116efe652cd1.jpg",
+    "static/media/forest-lake2.jpg": "/static/media/forest-lake2.3453bb427db371ad4249.jpg",
+    "static/media/news-image6.jpg": "/static/media/news-image6.850bc77257279796bf7c.jpg",
+    "static/media/values-image.jpg": "/static/media/values-image.cf15aeba451f4c490fb1.jpg",
+    "static/media/vision-image.jpg": "/static/media/vision-image.0030b2303a35d406c066.jpg",
+    "static/media/mission-image.jpg": "/static/media/mission-image.143a0544b20ef5a92620.jpg",
+    "static/media/forest-logo.jpg": "/static/media/forest-logo.f050340b56d1c3dbce82.jpg",
+    "static/media/news-image5.jpg": "/static/media/news-image5.f83ca159cdde9cb1cb52.jpg",
+    "static/media/news-image3.jpg": "/static/media/news-image3.24ed7ae5536381e08824.jpg",
+    "static/media/news-image1.jpg": "/static/media/news-image1.9881497613350e08bc1c.jpg",
+    "static/media/news-image4.jpg": "/static/media/news-image4.8773d0475939d6cd383d.jpg",
+    "static/media/news-image2.jpg": "/static/media/news-image2.52fa3ea747538b8e9049.jpg",
+    "index.html": "/index.html",
+    "main.bec8cf8f.css.map": "/static/css/main.bec8cf8f.css.map",
+    "main.4c79dd15.js.map": "/static/js/main.4c79dd15.js.map",
+    "787.f4614bcb.chunk.js.map": "/static/js/787.f4614bcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bec8cf8f.css",
+    "static/js/main.4c79dd15.js"
+  ]
+}
