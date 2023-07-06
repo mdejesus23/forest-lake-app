@@ -1,0 +1,10 @@
+@import "../../sass/UI";
+
+.card {
+  padding: 10px;
+  box-shadow: 0 2px 8px $primary-color;
+  border-radius: 14px;
+  background-color: white;
+  max-width: 90%;
+  margin: 0 5px;
+}
