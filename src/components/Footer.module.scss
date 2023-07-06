@@ -24,7 +24,7 @@ footer {
     svg {
       color: white;
       margin: 20px;
-      font-size: 3rem;
+      font-size: 2rem;
       cursor: pointer;
       transition: color 0.3s;
     }
@@ -33,4 +33,19 @@ footer {
       color: $primary-color;
     }
   }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 580px) {
+}
+
+@media (max-width: 420px) {
 }

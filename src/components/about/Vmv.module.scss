@@ -1,1 +1,204 @@
 @import "../../../sass/UI";
+
+@media (min-width: 1200px) {
+  .vision {
+    height: 100%;
+    background-color: $secondary-color;
+    padding: 3rem 1rem;
+
+    .visionContainer {
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .card {
+        height: 550px;
+        overflow: auto;
+
+        img {
+          max-height: 400px;
+        }
+
+        h2 {
+          text-align: center;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        .desContainer {
+          overflow: auto;
+
+          p {
+            font-size: 1.2rem;
+            text-align: justify;
+            overflow: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .vision {
+    height: 100%;
+    background-color: $secondary-color;
+    padding: 2rem 1rem;
+
+    .visionContainer {
+      width: 70%;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 1rem;
+      grid-template-columns: 1fr;
+
+      .card {
+        margin: 0 auto;
+        // height: 450px;
+
+        img {
+          max-height: 400px;
+        }
+
+        h2 {
+          text-align: center;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        .desContainer {
+          padding: 0 2rem;
+          overflow-y: auto;
+
+          p {
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .vision {
+    height: 100%;
+    background-color: $secondary-color;
+    padding: 2rem 1rem;
+
+    .visionContainer {
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 1rem;
+      grid-template-columns: 1fr;
+
+      .card {
+        margin: 0 auto;
+        // height: 450px;
+
+        img {
+          max-height: 400px;
+        }
+
+        h2 {
+          text-align: center;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        .desContainer {
+          padding: 0 2rem;
+          overflow-y: auto;
+
+          p {
+            text-align: justify;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .vision {
+    height: 100%;
+    background-color: $secondary-color;
+    padding: 3rem 1rem;
+
+    .visionContainer {
+      width: 90%;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 2rem;
+      grid-template-columns: 1fr;
+
+      .card {
+        margin: 0 auto;
+        // height: 450px;
+
+        img {
+          max-height: 400px;
+        }
+
+        h2 {
+          text-align: center;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        .desContainer {
+          padding: 0 2rem;
+          overflow-y: auto;
+
+          p {
+            text-align: justify;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .vision {
+    height: 100%;
+    background-color: $secondary-color;
+    padding: 2rem 0;
+
+    .visionContainer {
+      width: 95%;
+      margin: 0 auto;
+      display: grid;
+      row-gap: 2rem;
+      grid-template-columns: 1fr;
+
+      .card {
+        margin: 0 auto;
+        // height: 450px;
+
+        img {
+          max-height: 350px;
+        }
+
+        h2 {
+          text-align: center;
+          color: $secondary-color;
+          margin-bottom: 0.5rem;
+        }
+
+        .desContainer {
+          padding: 0 2rem;
+          overflow-y: auto;
+
+          p {
+            text-align: justify;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
