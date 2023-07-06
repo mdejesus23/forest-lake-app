@@ -99,8 +99,8 @@
         margin: 0 auto;
 
         img {
-          height: 500px;
-          width: 500px;
+          height: 400px;
+          width: 400px;
           object-fit: cover;
         }
       }
@@ -169,8 +169,43 @@
         margin: 0 auto;
 
         img {
-          height: 350px;
-          width: 360px;
+          height: 300px;
+          width: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .purchaseContainer {
+    // height: 100vh;
+    background-color: $secondary-color;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    h3 {
+      margin: 1.5rem auto;
+      text-align: center;
+      color: $tertiary-color;
+      font-size: 2rem;
+    }
+
+    .grid {
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+
+      li {
+        margin: 0 auto;
+
+        img {
+          height: 290px;
+          width: 290px;
           object-fit: cover;
         }
       }

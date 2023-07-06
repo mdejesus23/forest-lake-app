@@ -23,3 +23,41 @@ nav {
     }
   }
 }
+
+@media (min-width: 1200px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 800px) {
+}
+
+@media (max-width: 580px) {
+  nav {
+    .flex {
+      display: flex;
+      padding: 0 1rem;
+
+      li {
+        padding-right: 0.6rem;
+
+        a {
+          padding: 0.5rem 0.5rem;
+          border-radius: 10px;
+          font-size: 1rem;
+          font-weight: bold;
+          transition: background-color 0.3s, color 0.3s;
+
+          &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+}
