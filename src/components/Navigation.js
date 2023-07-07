@@ -4,9 +4,11 @@ import { NavLink } from "react-router-dom";
 
 import classes from "./Navigation.module.scss";
 
-const Navigation = () => {
+const Navigation = (props) => {
+  const toggleClass = props.toggleNav ? classes.show : classes.hide;
+
   return (
-    <nav>
+    <nav className={toggleClass}>
       <ul className={classes.flex}>
         <li>
           <NavLink
