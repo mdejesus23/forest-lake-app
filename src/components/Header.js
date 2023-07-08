@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import MenuIcon from "@mui/icons-material/Menu";
+import { Spin as Hamburger } from "hamburger-react";
 
 import Logo from "../assets/fl_logo.png";
 import Modal from "../UI/Modal";
@@ -33,7 +33,7 @@ const Header = () => {
       <Navigation toggleNav={showNav} />
       <div className={classes.menuButtonContainer}>
         <button className={classes.menuButton} onClick={menuButtonHandler}>
-          <MenuIcon />
+          <Hamburger color="#336e6a" toggled={showNav} />
         </button>
       </div>
       {showNav && <Modal onHideNav={hideCartHandler} />}

@@ -1,0 +1,23 @@
+@import "../../sass/UI";
+
+.button {
+  position: fixed;
+  padding: 8px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50%;
+  right: 40px;
+  bottom: 20px;
+  background-color: rgba(51, 110, 106, 0.4);
+  color: $primary-color;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

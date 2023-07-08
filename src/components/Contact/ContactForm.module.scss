@@ -1,10 +1,24 @@
 @import "../../../sass/UI";
 
+.heading {
+  color: $tertiary-color;
+  padding: 2rem;
+  text-align: center;
+  background-color: $secondary-color;
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+}
+
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
+  margin-bottom: 0;
+  padding: 1rem;
 
   h1 {
     margin: 2rem auto 1rem auto;
@@ -21,7 +35,7 @@
 
   form {
     .InputContainer {
-      width: 40%;
+      width: 90%;
       border-radius: 4px;
       margin: 2rem auto;
       padding: 1rem;
@@ -133,10 +147,12 @@
 
 @media (max-width: 899px) {
   .contact {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    // height: calc(100vh - 100px);
+    background-color: $secondary-color;
+    margin-bottom: 0;
+    padding: 1rem;
 
     p {
       max-width: 80%;
