@@ -1,159 +1,87 @@
 @import "../../sass/UI";
 
-@media (min-width: 1200px) {
-  .imageContainer {
-    max-width: 100%;
-    height: calc(100vh - 150px);
-    margin: 0 auto 3rem auto;
-    overflow: hidden;
-    position: relative;
+.image-slider {
+  max-width: 100%;
+  height: calc(100vh - 150px);
+  margin: 0 auto 3rem auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+
+  .overlays {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 50;
 
-    .overlay {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .left {
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
+      left: 2rem;
+      top: 50%;
+      font-size: 2rem;
+      border: none;
+      color: black;
+      z-index: 5;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.5;
+    }
 
-      h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
-        color: $quaternary-color;
-        font-weight: bold;
-        letter-spacing: 3px;
-      }
-
-      p {
-        color: white;
-        font-size: 1.5rem;
-      }
+    .right {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      font-size: 2rem;
+      border: none;
+      color: black;
+      z-index: 5;
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.5;
     }
   }
-}
 
-@media (max-width: 1199px) {
-  .imageContainer {
-    max-width: 100%;
-    height: calc(100vh - 150px);
-    margin: 0 auto 3rem auto;
-    overflow: hidden;
-    position: relative;
-    display: flex;
+  ul {
+    .currentSlide {
+      transition-duration: 0.5s ease;
+      opacity: 0;
 
-    .overlay {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      &.active {
+        opacity: 1;
+        transition-duration: 0.5s;
+        transform: scale(1.2);
+      }
+    }
+
+    li {
       position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 100%;
 
       h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
-        color: $quaternary-color;
-        font-weight: bold;
-        letter-spacing: 3px;
+        font-size: 4rem;
+        color: $tertiary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
-      p {
-        color: white;
-        font-size: 1.5rem;
+      .image {
+        width: 100%;
+        height: 100%;
       }
     }
   }
 }
 
 @media (max-width: 800px) {
-  .imageContainer {
-    max-width: 100%;
-    height: calc(100vh - 150px);
-    margin: 0 auto 3rem auto;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-
-    .overlay {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
-
-      h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 5rem;
-        color: $quaternary-color;
-        font-weight: bold;
-        letter-spacing: 3px;
-      }
-
-      p {
-        color: white;
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 580px) {
-  .imageContainer {
-    max-width: 100%;
-    height: calc(100vh - 250px);
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-
-    .overlay {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
-      height: 100%;
-
-      h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 4rem;
-        color: $quaternary-color;
-        font-weight: bold;
-        letter-spacing: 2px;
-      }
-
-      p {
-        color: white;
-        font-size: 1.5rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 420px) {
-  .imageContainer {
+  .image-slider {
     max-width: 100%;
     height: calc(100vh - 250px);
     margin: 0 auto 3rem auto;
@@ -161,7 +89,7 @@
     position: relative;
     display: flex;
 
-    .overlay {
+    .overlays {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -170,22 +98,65 @@
       background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
       height: 100%;
+      z-index: 50;
 
-      h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 4rem;
-        color: $quaternary-color;
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-bottom: 2rem;
+      .left {
+        position: absolute;
+        left: 2rem;
+        top: 50%;
+        font-size: 2rem;
+        border: none;
+        color: black;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.5;
       }
 
-      p {
-        color: white;
-        font-size: 1.3rem;
+      .right {
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        font-size: 2rem;
+        border: none;
+        color: black;
+        z-index: 5;
+        cursor: pointer;
+        user-select: none;
+        opacity: 0.5;
+      }
+    }
+
+    ul {
+      .currentSlide {
+        transition-duration: 0.5s ease;
+        opacity: 0;
+
+        &.active {
+          opacity: 1;
+          transition-duration: 0.5s;
+          transform: scale(1.2);
+        }
+      }
+
+      li {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        h1 {
+          font-size: 3rem;
+          color: $tertiary-color;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .image {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
