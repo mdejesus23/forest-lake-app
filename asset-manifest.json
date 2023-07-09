@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.8dccddd9.css",
-    "main.js": "/static/js/main.7cf78522.js",
+    "main.css": "/static/css/main.41376ed6.css",
+    "main.js": "/static/js/main.7346994a.js",
     "static/js/787.f4614bcb.chunk.js": "/static/js/787.f4614bcb.chunk.js",
     "static/media/forest-lake1.jpg": "/static/media/forest-lake1.66a929c3116efe652cd1.jpg",
     "static/media/forest-lake2.jpg": "/static/media/forest-lake2.3453bb427db371ad4249.jpg",
+    "static/media/forest-lake3.jpg": "/static/media/forest-lake3.933dd00dfaaa83a9ee48.jpg",
     "static/media/news-image6.jpg": "/static/media/news-image6.850bc77257279796bf7c.jpg",
     "static/media/values-image.jpg": "/static/media/values-image.cf15aeba451f4c490fb1.jpg",
     "static/media/vision-image.jpg": "/static/media/vision-image.0030b2303a35d406c066.jpg",
@@ -16,12 +17,12 @@
     "static/media/news-image4.jpg": "/static/media/news-image4.8773d0475939d6cd383d.jpg",
     "static/media/news-image2.jpg": "/static/media/news-image2.52fa3ea747538b8e9049.jpg",
     "index.html": "/index.html",
-    "main.8dccddd9.css.map": "/static/css/main.8dccddd9.css.map",
-    "main.7cf78522.js.map": "/static/js/main.7cf78522.js.map",
+    "main.41376ed6.css.map": "/static/css/main.41376ed6.css.map",
+    "main.7346994a.js.map": "/static/js/main.7346994a.js.map",
     "787.f4614bcb.chunk.js.map": "/static/js/787.f4614bcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dccddd9.css",
-    "static/js/main.7cf78522.js"
+    "static/css/main.41376ed6.css",
+    "static/js/main.7346994a.js"
   ]
 }
