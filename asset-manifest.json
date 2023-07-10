@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.41376ed6.css",
-    "main.js": "/static/js/main.7346994a.js",
+    "main.js": "/static/js/main.0bf94b4c.js",
     "static/js/787.f4614bcb.chunk.js": "/static/js/787.f4614bcb.chunk.js",
     "static/media/forest-lake1.jpg": "/static/media/forest-lake1.66a929c3116efe652cd1.jpg",
     "static/media/forest-lake2.jpg": "/static/media/forest-lake2.3453bb427db371ad4249.jpg",
@@ -18,11 +18,11 @@
     "static/media/news-image2.jpg": "/static/media/news-image2.52fa3ea747538b8e9049.jpg",
     "index.html": "/index.html",
     "main.41376ed6.css.map": "/static/css/main.41376ed6.css.map",
-    "main.7346994a.js.map": "/static/js/main.7346994a.js.map",
+    "main.0bf94b4c.js.map": "/static/js/main.0bf94b4c.js.map",
     "787.f4614bcb.chunk.js.map": "/static/js/787.f4614bcb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41376ed6.css",
-    "static/js/main.7346994a.js"
+    "static/js/main.0bf94b4c.js"
   ]
 }
